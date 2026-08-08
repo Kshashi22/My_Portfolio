@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishka Shashi | CS (AI & ML) Student, Developer & Technical Writer</title>
+    <meta name="description" content="Portfolio of Kanishka Shashi — Computer Science (AI & ML) student at Noida International University, LLM post-training intern, published researcher, and technical writer.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%239B7EDE'/%3E%3Cstop offset='1' stop-color='%23F0A8C0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='55' font-family='Georgia,serif' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="floating-elements" id="floatingElements"></div>
+    <nav id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Kanishka Shashi</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#education">About</a>
+                <a href="#journey">Journey</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#writing">Writing</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#research">Research</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a>
+            <a href="#education" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> About</a>
+            <a href="#journey" onclick="closeMobileMenu()"><i class="fas fa-road"></i> Journey</a>
+            <a href="#skills" onclick="closeMobileMenu()"><i class="fas fa-code"></i> Skills</a>
+            <a href="#projects" onclick="closeMobileMenu()"><i class="fas fa-diagram-project"></i> Projects</a>
+            <a href="#writing" onclick="closeMobileMenu()"><i class="fas fa-pen-nib"></i> Writing</a>
+            <a href="#certificates" onclick="closeMobileMenu()"><i class="fas fa-certificate"></i> Certificates</a>
+            <a href="#research" onclick="closeMobileMenu()"><i class="fas fa-flask"></i> Research</a>
+        </div>
+
+        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <span class="availability-badge open"><i class="fas fa-circle"></i> Open to Work — Internships &amp; Full-Time Roles</span>
+                    <h1>Hi, I'm <span>Kanishka</span></h1>
+                    <p>A Computer Science (AI &amp; ML) student passionate about building, analyzing, and explaining technology. I’m exploring Full-Stack Web Development, building responsive and interactive web applications using modern technologies, while also working with Data Analysis to transform raw data into meaningful insights through SQL, Python, Excel, and Power BI. I’ve gained hands-on experience through internships in LLM post-training and data analytics, worked on AI research, and enjoy writing beginner-friendly technical guides — all while pursuing my B.Tech in CSE (AIML) at Noida International University.</p>
+</p>
+                    <a href="#projects" class="cta-button">Explore My Work</a>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="profile-avatar">
+                                <img src="profile.png" alt="Kanishka Shashi">
+                            </div>
+                            <h3>Kanishka Shashi</h3>
+                            <p>Full-Stack Developer | Data Analyst | AI & ML Student</p>
+                            <div class="location-chip">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Greater Noida, India</span>
+                            </div>
+                            <div
+                                style="margin-top: 20px; padding: 15px; background: rgba(155, 126, 222, 0.1); border-radius: 10px; width: 100%;">
+                                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>From building web experiences to analyzing real-world data and evaluating LLMs, I enjoy turning technology into practical solutions.</strong></p>
+                                <p style="font-size: 1.2rem; font-weight: 600; color: var(--primary-dark);">2 Internships • 60+ Articles • AI/ML Research</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-bar fade-in">
+                <div class="stat-item">
+                    <i class="fas fa-file-lines"></i>
+                    <div><span class="stat-number">1</span><span class="stat-label">Research Paper</span></div>
+                </div>
+                <div class="stat-item">
+                    <i class="fab fa-github"></i>
+                    <div><span class="stat-number">36+</span><span class="stat-label">GitHub Repos</span></div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div><span class="stat-number">2</span><span class="stat-label">Internships</span></div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-pen-nib"></i>
+                    <div><span class="stat-number">60+</span><span class="stat-label">Articles Written</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#education">
+                <i class="fas fa-chevron-down"></i>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="why-hire-me" class="why-hire">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">The Pitch</span>
+                <h2>Why Hire Me?</h2>
+                <p>A quick summary of what I bring to a team, beyond the résumé bullet points.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-flask"></i></div>
+                    <h3 class="card-title">Research-Backed Thinking</h3>
+                    <p>I've co-authored a peer-reviewed paper on emotion AI and interned on LLM post-training, evaluating model outputs for accuracy and quality — I approach problems with evidence, not guesswork.</p>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="card-title">Full-Stack + Data Skillset</h3>
+                    <p>Equally comfortable analyzing datasets in Python and building interfaces in JavaScript — I can move between data, backend, and frontend work as a project needs.</p>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="card-title">Real Industry Experience</h3>
+                    <p>Hands-on internship experience at an AI startup and a data analytics firm, working with real datasets, dashboards, and production-facing model evaluations, not just classroom projects.</p>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h3 class="card-title">Open Source Contributor</h3>
+                    <p>I've contributed to Docker's official <strong>awesome-compose</strong> repository, adding a new containerized sample application — I care about writing code others can actually use.</p>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="card-title">Clear Communicator</h3>
+                    <p>60+ published technical articles mean I can explain complex systems simply — a skill that shows up in documentation, code reviews, and cross-team collaboration.</p>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="card-title">Fast, Consistent Learner</h3>
+                    <p>I balance coursework, internships, research, and writing at the same time — and still ship consistently. I pick up new tools and domains quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Who I Am</span>
+                <h2>Education &amp; Background</h2>
+                <p>My academic foundation — from science and math in senior secondary to specializing in AI &amp; ML at the undergraduate level.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="card-title">B.Tech in Computer Science (AI &amp; ML)</h3>
+                    <span class="card-subtitle">Noida International University, Greater Noida</span>
+                    <p>Currently pursuing my B.Tech in Computer Science Engineering with a specialization in AI &amp; ML, building a foundation across programming, data structures, machine learning, and system design.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
+                        <span>Status: <strong>Currently Pursuing</strong></span>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                    <h3 class="card-title">Senior Secondary Education</h3>
+                    <span class="card-subtitle">Banasthali Vidyapith · 2021 – 2023</span>
+                    <p>Completed senior secondary education with a focus on Science and Mathematics, developing strong analytical, quantitative, and problem-solving skills that laid the foundation for a career in Computer Science and Artificial Intelligence.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%;"></div>
+                        <span>Focus: <strong>Science &amp; Mathematics</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Timeline</span>
+                <h2>My Journey So Far</h2>
+                <p>From senior secondary school to internships, research, and writing in public — here's how it's unfolded.</p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">'21</div>
+                    <div class="timeline-content">
+                        <h3>Senior Secondary Education</h3>
+                        <p>Studied Science and Mathematics at Banasthali Vidyapith (2021–2023), building the analytical and quantitative foundation for a career in Computer Science and AI.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">'23</div>
+                    <div class="timeline-content">
+                        <h3>Started My B.Tech</h3>
+                        <p>Began my B.Tech in Computer Science Engineering (AI &amp; ML) at Noida International University, Greater Noida — diving into programming fundamentals and Python-based data analysis.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">'24</div>
+                    <div class="timeline-content">
+                        <h3>First Data Certifications</h3>
+                        <p>Completed my first data analytics training and internship certificate with InternsElite, and a Data Science Master Class with upGrad — starting to build a data-focused skillset.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">'25</div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern &amp; First Publication</h3>
+                        <p>Interned as a Data Analyst at InLighn Tech, working on EDA, dashboards, and reports with Excel, SQL, Python, and Power BI. That same year, co-authored my first research paper, published in JSIAR.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">'26</div>
+                    <div class="timeline-content">
+                        <h3>Technical Writing &amp; LLM Internship</h3>
+                        <p>Started publishing technical articles on Hashnode, then joined Ethara AI as an LLM Post-Training Intern, evaluating and refining AI model outputs for quality and accuracy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">NOW</div>
+                    <div class="timeline-content">
+                        <h3>Current Focus</h3>
+                        <p>Balancing coursework with open-source contributions, ML projects, and technical writing — actively open to new internship and full-time opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">What I Know</span>
+                <h2>Skills &amp; Tools</h2>
+                <p>What I've picked up through coursework, internships, projects, and writing about technology.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h3>Data &amp; Machine Learning</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Where I started</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item python">Python</div>
+                        <div class="skill-item">Pandas &amp; NumPy</div>
+                        <div class="skill-item">Jupyter Notebook</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Excel</div>
+                        <div class="skill-item">Power BI</div>
+                        <div class="skill-item">Machine Learning Basics</div>
+                    </div>
+                    <p style="margin-top: 20px;">Built end-to-end EDA and ML projects, and used these tools daily during my Data Analyst internship to clean data, build dashboards, and report insights.</p>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div>
+                            <h3>Web Development</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Which I specialize in</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <div class="skill-item">Next.js</div>
+                        <div class="skill-item">Express.js</div>
+                        <div class="skill-item">HTML &amp; CSS</div>
+                        <div class="skill-item">System Design</div>
+                        <div class="skill-item">REST APIs</div>
+                    </div>
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(155, 126, 222, 0.1); border-radius: 10px; border-left: 4px solid var(--primary);">
+                        <p style="font-size: 0.9rem;"><strong>Why I write about it:</strong> Explaining how Node.js, React, and JavaScript work internally is how I learn them best myself.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <div>
+                            <h3>Tools &amp; Practices</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">How I work</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">Git &amp; GitHub</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">Technical Writing</div>
+                        <div class="skill-item">Markdown</div>
+                        <div class="skill-item">cURL</div>
+                        <div class="skill-item">Postman</div>
+                        <div class="skill-item">NPM</div>
+                        <div class="skill-item">JAVA</div>
+                    </div>
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(240, 168, 192, 0.12); border-radius: 10px;">
+                        <p style="font-size: 0.9rem;"><strong>Sharpening problem-solving:</strong> I practice data structures &amp; algorithms on <a href="https://leetcode.com/u/Kshashi22/" target="_blank" rel="noopener" style="color: var(--primary-dark); font-weight: 600;">LeetCode <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Selected Work</span>
+                <h2>Projects</h2>
+                <p>A mix of machine learning, open-source contribution, web apps, and data analysis — built and maintained across 36+ public repositories.</p>
+            </div>
+
+            <h3 class="subsection-title fade-in" style="text-align:left; margin-bottom: 25px;">Featured Projects</h3>
+            <div class="cards-grid" style="margin-bottom: 60px;">
+                <div class="project-card featured fade-in">
+                    <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+                        <span class="project-lang">Python · Streamlit</span>
+                    </div>
+                    <h3 class="card-title">Credit Card Fraud Detection using ML</h3>
+                    <p>An end-to-end fraud detection pipeline — EDA, feature engineering, and model comparison between Logistic Regression and Random Forest. The Random Forest model reached <strong>94.27% accuracy</strong> and <strong>99% recall</strong>, deployed as an interactive Streamlit app.</p>
+                    <a href="https://github.com/Kshashi22/Credit-Card-Fraud-Detection-using-ML" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card featured fade-in">
+                    <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fab fa-docker"></i></div>
+                        <span class="project-lang">Docker · Node.js · MongoDB</span>
+                    </div>
+                    <h3 class="card-title">Open Source: Docker awesome-compose</h3>
+                    <p>Contributed an Express + MongoDB sample to Docker's official <strong>awesome-compose</strong> repository — a containerized notes API with full CRUD endpoints, deployable with a single <code>docker compose up</code>.</p>
+                    <a href="https://github.com/Kshashi22/Kshashi22-awesome-compose-Docker-Contribution" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card featured fade-in">
+                    <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-circle-question"></i></div>
+                        <span class="project-lang">HTML · CSS · JavaScript</span>
+                    </div>
+                    <h3 class="card-title">Quiz Web App</h3>
+                    <p>A responsive multiple-choice quiz application with a progress bar, automatic score calculation, input validation, and a restart flow — built entirely with vanilla JavaScript.</p>
+                    <a href="https://github.com/Kshashi22/Quiz_game" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <h3 class="subsection-title fade-in" style="text-align:left; margin-bottom: 25px;">More Projects</h3>
+            <div class="cards-grid">
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">Data Analysis Project</h3>
+                    <p>An exploratory data analysis notebook covering data cleaning, visualization, and pattern-finding in Python.</p>
+                    <a href="https://github.com/Kshashi22/Data_Analysis_Project" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-car"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">Cars Dataset Analysis</h3>
+                    <p>Exploratory analysis of an automotive dataset, looking at pricing, specs, and trends across vehicle listings.</p>
+                    <a href="https://github.com/Kshashi22/Cars_Dataset_Analysis" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">IT Employee Simulation</h3>
+                    <p>A workforce-style simulation and analysis project exploring IT employee data and patterns.</p>
+                    <a href="https://github.com/Kshashi22/IT_Employee_Stimulation" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-film"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">IMDB Movie Dataset</h3>
+                    <p>Data analysis of movie ratings and metadata from IMDB, digging into trends across genres and years.</p>
+                    <a href="https://github.com/Kshashi22/IMDB_Movie_Dataset" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-fire"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">Forest Fire Analysis</h3>
+                    <p>An environmental dataset project analyzing forest fire occurrences and contributing factors.</p>
+                    <a href="https://github.com/Kshashi22/Forest_Fire" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-top">
+                        <div class="card-icon"><i class="fas fa-shield-heart"></i></div>
+                        <span class="project-lang">Jupyter Notebook</span>
+                    </div>
+                    <h3 class="card-title">Crimes on Women</h3>
+                    <p>A social-impact dataset project analyzing reported crimes against women to surface patterns in the data.</p>
+                    <a href="https://github.com/Kshashi22/Crimes_on_Women" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/Kshashi22?tab=repositories" target="_blank" rel="noopener" class="cta-button">
+                    <i class="fab fa-github" style="margin-right: 8px;"></i>View All 36+ Repositories
+                </a>
+                <a href="https://leetcode.com/u/Kshashi22/" target="_blank" rel="noopener" class="cta-button" style="background: var(--gradient-warm);">
+                    <i class="fas fa-code" style="margin-right: 8px;"></i>View LeetCode Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing" class="writing">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Learning In Public</span>
+                <h2>Writing &amp; Blogs</h2>
+                <p>I run several Hashnode publications where I simplify complex tech topics into practical, beginner-friendly guides.</p>
+            </div>
+
+            <div class="blogs-grid fade-in">
+                <a href="https://javasblog.hashnode.dev" target="_blank" rel="noopener" class="blog-chip">
+                    <i class="fab fa-js"></i>
+                    <div><h4>JavaScript</h4><span>27 posts</span></div>
+                </a>
+                <a href="https://nodej.hashnode.dev" target="_blank" rel="noopener" class="blog-chip">
+                    <i class="fab fa-node-js"></i>
+                    <div><h4>Node.js</h4><span>22 posts</span></div>
+                </a>
+                <a href="https://html-dev09.hashnode.dev" target="_blank" rel="noopener" class="blog-chip">
+                    <i class="fab fa-html5"></i>
+                    <div><h4>Web Development</h4><span>10 posts</span></div>
+                </a>
+                <a href="https://modem.hashnode.dev" target="_blank" rel="noopener" class="blog-chip">
+                    <i class="fas fa-tower-broadcast"></i>
+                    <div><h4>MODEM</h4><span>3 posts</span></div>
+                </a>
+                <a href="https://curl08.hashnode.dev" target="_blank" rel="noopener" class="blog-chip">
+                    <i class="fas fa-terminal"></i>
+                    <div><h4>Getting Started with cURL</h4><span>3 posts</span></div>
+                </a>
+                <a href="https://hashnode.com/@Kshashi22" target="_blank" rel="noopener" class="blog-chip blog-chip-more">
+                    <i class="fas fa-layer-group"></i>
+                    <div><h4>+ 2 More Blogs</h4><span>View all on Hashnode</span></div>
+                </a>
+            </div>
+
+            <h3 class="subsection-title fade-in">Recent Articles</h3>
+            <div class="articles-list">
+                <a href="https://nodej.hashnode.dev/understanding-node-js-architecture-a-deep-dive" target="_blank" rel="noopener" class="article-item fade-in">
+                    <div><h4>Understanding Node.js Architecture: A Deep Dive</h4><span class="article-meta">nodej.hashnode.dev · 7 min read</span></div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://javasblog.hashnode.dev/10-typescript-tricks-every-developer-should-know-explained-simply" target="_blank" rel="noopener" class="article-item fade-in">
+                    <div><h4>10 TypeScript Tricks Every Developer Should Know</h4><span class="article-meta">javasblog.hashnode.dev · 5 min read</span></div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://javasblog.hashnode.dev/the-restaurant-that-runs-on-promises-a-javascript-love-story" target="_blank" rel="noopener" class="article-item fade-in">
+                    <div><h4>The Restaurant That Runs on Promises: A JavaScript Love Story</h4><span class="article-meta">javasblog.hashnode.dev · 8 min read</span></div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://html-dev09.hashnode.dev/how-react-works-internally-virtual-dom-reconciliation-and-rendering" target="_blank" rel="noopener" class="article-item fade-in">
+                    <div><h4>How React Works Internally: Virtual DOM, Reconciliation &amp; Rendering</h4><span class="article-meta">html-dev09.hashnode.dev · 12 min read</span></div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Credentials</span>
+                <h2>Certificates</h2>
+                <p>Courses, workshops, and job simulations I've completed alongside my degree.</p>
+            </div>
+
+            <div class="certificates-grid">
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fab fa-microsoft"></i></div>
+                        <span class="certificate-year">Jul 2026</span>
+                    </div>
+                    <h3>AI Skills Fest 2026</h3>
+                    <span class="certificate-issuer">Microsoft</span>
+                    <p>Completed Microsoft's AI Skills Fest program, building practical exposure to modern AI tools and workflows.</p>
+                    <a href="https://www.credly.com/badges/f982db14-c3dd-4e39-bb0f-fc6fce104d75/linked_in_profile" target="_blank" rel="noopener" class="certificate-link">Show Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-laptop-code"></i></div>
+                        <span class="certificate-year">Jul 2026</span>
+                    </div>
+                    <h3>Full-Stack Web Dev Cohort</h3>
+                    <span class="certificate-issuer">Chai aur Code</span>
+                    <p>Completed the Full Stack Web Development Cohort, gaining hands-on experience with HTML, CSS, JavaScript, React.js, Node.js, Express.js, APIs, databases, and Git through real-world projects.</p>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-robot"></i></div>
+                        <span class="certificate-year">May 2026</span>
+                    </div>
+                    <h3>AI Tools Workshop</h3>
+                    <span class="certificate-issuer">Be10x</span>
+                    <p>Hands-on exposure to AI tools including NotebookLM, Claude, Comet, Google Stitch, and Julius AI — for productivity, research, and workflow automation.</p>
+                    <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd09971381090" target="_blank" rel="noopener" class="certificate-link">Show Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-chart-pie"></i></div>
+                        <span class="certificate-year">Jun 2025</span>
+                    </div>
+                    <h3>Data Visualisation Job Simulation</h3>
+                    <span class="certificate-issuer">Tata Group · Forage</span>
+                    <p>Completed Tata Group's "Empowering Business with Effective Insights" job simulation, practicing real-world data visualization and business analysis.</p>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_e4mYqkF2DaeR26KJb_1750428748248_completion_certificate.pdf" target="_blank" rel="noopener" class="certificate-link">Show Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-briefcase"></i></div>
+                        <span class="certificate-year">Jun 2025</span>
+                    </div>
+                    <h3>Data Analytics Job Simulation</h3>
+                    <span class="certificate-issuer">Deloitte Australia · Forage</span>
+                    <p>Completed Deloitte Australia's Data Analytics job simulation, working through a real-world forensic technology analysis scenario.</p>
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_e4mYqkF2DaeR26KJb_1750253584503_completion_certificate.pdf" target="_blank" rel="noopener" class="certificate-link">Show Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-network-wired"></i></div>
+                        <span class="certificate-year">Feb 2025</span>
+                    </div>
+                    <h3>Data Analytics Essentials</h3>
+                    <span class="certificate-issuer">Cisco Networking Academy</span>
+                    <p>Covered SQL, data visualization, and data analysis fundamentals as part of Cisco's Data Analytics Essentials course.</p>
+                    <a href="https://www.credly.com/badges/a49bbdaf-8c4a-4a99-8a57-1483507bf5d9/linked_in_profile" target="_blank" rel="noopener" class="certificate-link">Show Credential <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-chart-column"></i></div>
+                        <span class="certificate-year">Feb 2025</span>
+                    </div>
+                    <h3>Power BI Micro Course</h3>
+                    <span class="certificate-issuer">SkillCourse</span>
+                    <p>Covered business analysis and data visualization fundamentals using Microsoft Power BI.</p>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-database"></i></div>
+                        <span class="certificate-year">Jun 2024</span>
+                    </div>
+                    <h3>Data Analyst Internship &amp; Training</h3>
+                    <span class="certificate-issuer">InternsElite</span>
+                    <p>Completed data analyst training and an internship certification, covering data visualization and analysis fundamentals.</p>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="certificate-year">Nov 2023</span>
+                    </div>
+                    <h3>Data Science Master Class</h3>
+                    <span class="certificate-issuer">upGrad</span>
+                    <p>Certificate of participation in upGrad's Data Science Master Class, covering core data science concepts.</p>
+                </div>
+
+                <div class="certificate-card fade-in">
+                    <div class="certificate-top">
+                        <div class="certificate-icon"><i class="fas fa-cloud"></i></div>
+                        <span class="certificate-year">Apr 2023</span>
+                    </div>
+                    <h3>AWS Workshop</h3>
+                    <span class="certificate-issuer">Appwars Technologies</span>
+                    <p>Completed a hands-on workshop introducing core AWS cloud concepts and services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-title fade-in">
+                <span class="eyebrow">Deep Dive</span>
+                <h2>Research Work</h2>
+                <p>My published research on the intersection of AI and human emotion.</p>
+            </div>
+
+            <div class="research-feature fade-in">
+                <span class="research-label">Original Research Article · JSIAR, Vol. 1, Issue 1 · Pages 97–106 · April 2025</span>
+                <h3>Feeling the Pulse: Unveiling Human Emotion through the Lens of Multimodal Big Data</h3>
+                <p class="research-authors">Yash Kumar &amp; Kanishka Shashi — Department of Computer Science and Engineering, Noida International University, Greater Noida, India</p>
+                <p class="research-abstract">This paper reviews how combining text, voice, and facial-expression data helps AI systems recognize human emotion more reliably than single-signal approaches. It looks at the technical and ethical challenges involved — from syncing different data streams to protecting privacy and avoiding bias — and examines how these systems are being applied in healthcare, education, and marketing, while calling for more transparent and responsible emotion-AI design.</p>
+                <div class="research-tags">
+                    <span class="research-tag">Emotion AI</span>
+                    <span class="research-tag">Multimodal Data</span>
+                    <span class="research-tag">Deep Learning</span>
+                    <span class="research-tag">Affective Computing</span>
+                    <span class="research-tag">Ethical AI</span>
+                </div>
+                <a href="https://jsiar.com/JSIAR-A-25-04130.html" target="_blank" rel="noopener" class="cta-button" style="margin-top: 25px;">
+                    Read Full Paper <i class="fas fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #F3E9F5;">Kanishka Shashi</h2>
+                    <p>CS (AI &amp; ML) Student · Developer · Technical Writer</p>
+                    <p style="margin-top: 6px; color: #A9E8C9; font-weight: 600;"><i class="fas fa-circle" style="font-size: 8px;"></i> Open to Work</p>
+                    <p style="margin-top: 8px;"><a href="mailto:kanishkashashi22@gmail.com" style="color: inherit; text-decoration: underline;">kanishkashashi22@gmail.com</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Kshashi22" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kanishka-shashi-5390252a1" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://hashnode.com/@Kshashi22" target="_blank" rel="noopener" class="social-link" aria-label="Hashnode"><i class="fas fa-blog"></i></a>
+                    <a href="https://leetcode.com/u/Kshashi22/" target="_blank" rel="noopener" class="social-link" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                    <a href="https://x.com/kshashi22" target="_blank" rel="noopener" class="social-link" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> <b>Kanishka Shashi</b>, All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
